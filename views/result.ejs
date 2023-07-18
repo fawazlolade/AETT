@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+          .timetable{
+            color:white;
+            border-radius:12px;
+            margin:1.5rem 1.5rem;
+            background: black;
+            border: none;
+            padding: 15px 15px;
+        }
+    </style>
+</head>
+<body>
+    
+        <section>
+            <h1> University of Ilorin: Department of Computer Science Education</h1>
+            <h2><%= year %> Provisional <%= semester %> Semester Time-Table</h2>
+            <table border="1" width="80%" height="50%">
+            <thead>
+                <th>Days</th>
+                <th>8:30AM - 11:30AM</th>
+                <th>12:00PM - 3:00PM</th>
+                <th>3:30PM - 6:00PM</th>
+            </thead>
+            <tbody>
+            
+            <tr>
+                <th>1st Day</th>
+                <td> <%= result1  %></td> 
+                <td></td>
+                <td><%= result2 %> </td>  
+            
+            </tr>
+            
+            <tr>
+                <th>2nd Day</th> 
+                <td></td>
+                <td><%= result3 %></td> 
+                <td><%= result4 %> </td>  
+            </tr>
+            
+            <tr>
+            <th>3rd Day</th>
+            <td><%= result5 %> </td> 
+            <td><%= result6 %> </td>  
+            <td></td>
+            </tr>
+            
+            <tr>
+            <th>4th Day</th>
+            <td><%= result7 %></td> 
+            <td><%= result8 %> </td>  
+            
+            </tr>
+            
+            <tr>
+            <th>5th Day</th>
+            <td><%= result9 %> </td> 
+            <td><%= result %></td>
+            <td><%= result10 %> </td>  
+            </tr>
+            
+            <tr>
+            <th>6th Day</th>
+            <td><%= result11 %> </td> 
+            <td></td>
+            <td><%= result12 %> </td>  
+            </tr>
+
+            <th>7th Day</th>
+            <td><%= result13 %> </td> 
+            <td></td>
+            <td><%= result14 %> </td>  
+        </tr>
+            
+            
+            </tbody>
+        </table>
+        
+        <button class="timetable" onclick="window.print();return false;">Print Timetable</button>
+        </section>
+    
+</body>
+</html>

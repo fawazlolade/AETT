@@ -1,0 +1,240 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: bigfont;
+    src: url('/font/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: mediumfont;
+    src: url('/font/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: smallfont;
+    src: url('/font/Poppins-Regular.ttf');
+}
+
+html{
+    background-color: black;
+}
+.site-header{
+    min-height: 95vh;
+    width: 100%;
+    background: black;
+    position: relative;
+
+}
+.site-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 10%;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.logo{
+    color:blueviolet;
+    font-family:mediumfont;
+    font-size: 1.875em;
+    letter-spacing: 0.150em;
+    text-decoration: none;
+
+}
+.nav-links ul li{
+    list-style-type: none;
+    display: inline-block;
+    margin: 8px 30px;
+}
+.nav-links li a{
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 0.500em;
+    color: white;
+    display: block;
+    font-family: smallfont;
+    font-size: 0.875em;
+    padding: 10px 12px;
+    text-align: center;
+    text-decoration: none;
+}
+.nav-links li a:hover{
+    background-color: #555;
+    color: black;
+}
+.text-info{
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+}
+.text-info h1{
+    color: white;
+    width: 75%;
+    margin: 1em auto 0.5em;
+    font-family: bigfont;
+    font-size: 3em;
+}
+#addstyle{
+    color: blueviolet;
+}
+.text-info p{
+    color:gainsboro;
+    font-family: smallfont;
+    margin: 1em auto;
+}
+.text-info a {
+    background-color: gainsboro;
+    border: 1px solid rgb(33, 28, 28);
+    border-radius: 10px;
+    color: black;
+    display: block;
+    font-family: smallfont;
+    font-size: 0.875em;
+    width: 20%;
+    margin: 2em auto;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+
+}
+.text-info a:hover{
+    background: gainsboro;
+    background-image: -webkit-linear-gradient(65deg, blueviolet 50%, plum 50%);
+    transition: 1.5s;
+}
+
+.site-footer{
+    min-height: 5vh;
+    width: 100%;
+    background: black;
+}
+
+.site-footer p{
+    color: #333;
+    font-family: mediumfont;
+    text-align: center;
+}
+
+
+
+@media (max-width: 600px){
+    .nav-links{
+        padding: 2% 0;
+    }
+    .logo{
+        letter-spacing: 0.100em;
+    }
+    .nav-links ul li{
+        margin: 8px 0;
+    }
+    .nav-links li a{
+        font-size: 0.875em;
+        padding: 7px 9px;
+    }    
+    .text-info{
+        width: 100%;
+    }
+    .text-info h1{
+        width: 90%;
+        font-size: 1.6em;
+    }
+    .text-info p{
+       width: 80%
+    }
+    .text-info a{
+        width: 50%;
+    }
+    
+}
+
+@media (min-width:601px) and (max-width:760px)  {
+    .nav-links{
+        padding: 2% 0;
+    }
+    .logo{
+        letter-spacing: 0.100em;
+    }
+    .nav-links ul li{
+        margin: 8px 0;
+    }
+    .nav-links li a{
+        font-size: 0.875em;
+        padding: 7px 9px;
+    }    
+    .text-info{
+        width: 100%;
+    }
+    .text-info h1{
+        width: 90%;
+        font-size: 2.5em;
+    }
+    .text-info p{
+       width: 70%
+    }
+    .text-info a{
+        width: 35%;
+    }  
+    
+}
+
+@media (min-width:761px) and (max-width:921px)  {
+    .nav-links{
+        padding: 2% 0;
+    }
+    .logo{
+        letter-spacing: 0.100em;
+    }
+    .nav-links ul li{
+        margin: 8px 0;
+    }
+    .nav-links li a{
+        font-size: 0.875em;
+        padding: 7px 9px;
+    }    
+    .text-info{
+        width: 100%;
+    }
+    .text-info h1{
+        width: 90%;
+        font-size: 3.0em;
+    }
+    .text-info p{
+       width: 70%
+    }
+    .text-info a{
+        width: 35%;
+    }  
+    
+}
+
+
+@media (min-width:921px) and (max-width:1025px)  {
+    
+    
+   
+    .nav-links li a{
+        font-size: 0.875em;
+        padding: 7px 9px;
+    }    
+    .text-info{
+        width: 100%;
+    }
+    .text-info h1{
+        width: 90%;
+        font-size: 3.0em;
+    }
+    .text-info p{
+       width: 70%
+    }
+    .text-info a{
+        width: 25%;
+    }  
+    
+}
+

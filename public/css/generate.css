@@ -1,0 +1,63 @@
+@font-face {
+    font-family: bigfont;
+    src: url('/font/Poppins-Bold.ttf');
+}
+@font-face {
+    font-family: mediumfont;
+    src: url('/font/Poppins-Medium.ttf');
+}
+@font-face {
+    font-family: smallfont;
+    src: url('/font/Poppins-Regular.ttf');
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    text-align: center;
+}
+input[type='text']{
+    background-color: none;
+    border-radius:15px;
+    border: 2px solid gainsboro;
+    width: 5.5rem;
+    font-family: mediumfont;
+    display: inline-block;
+    margin: 1.5rem 2.0rem;
+    padding: 14px 18px;
+
+}
+h1{
+    font-family: bigfont;
+}
+.radio{
+    font-family: smallfont;
+    margin: 1.5rem 2.0rem;
+
+}
+input[type='radio']{
+    margin: 0.5rem;
+}
+.submit{
+    cursor: pointer;
+    margin: 2.0rem;
+    background-color: black;
+    font-family: mediumfont;
+    border: none;
+    color: white;
+    border-radius:15px;
+    padding: 18px 18px;
+    width: 20.0rem;
+}
+
+
+@media screen and (max-width:900px) {
+    html{
+        
+        display: none;
+    
+    }
+}
