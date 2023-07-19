@@ -11,7 +11,7 @@ app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
 app.use('/', externalRoutes);
-
+app.use('/generate', externalRoutes);
 
 app.post('/result', (req, res) => {
 
@@ -89,7 +89,6 @@ app.post('/result', (req, res) => {
         result14: courseFourteen,
     })
     }
-
     return getMultipleRandomResults(14);
     });
 
